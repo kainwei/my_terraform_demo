@@ -141,7 +141,7 @@ resource "aws_instance" "web" {
     inline = [
       "sudo apt-get -y update",
       "sudo apt-get -y install nginx",
-      "sudo sed -i 's/Welcome to nginx/Welcome To Kain\\x27s Terraform Presentation/g' /usr/share/nginx/html/index.html",
+      "sudo sed -i 's/Welcome to nginx/Welcome To Kain\\x27s Terraform Presentation/g' /var/www/html/index.nginx-debian.html",
       "sudo service nginx start",
     ]
   }
