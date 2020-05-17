@@ -142,6 +142,7 @@ resource "aws_instance" "web" {
       "sudo apt-get -y update",
       "sudo apt-get -y install nginx",
       "sudo service nginx start",
+      "sudo sed 's/Welcome to nginx/Welcome To Kain\x27s Terraform Presentation/g' /usr/share/nginx/html/index.html",
     ]
   }
 }
